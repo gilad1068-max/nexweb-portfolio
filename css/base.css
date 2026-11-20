@@ -1,0 +1,98 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body { margin: 0; }
+img { max-width: 100%; display: block; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; padding: 0; }
+a { color: inherit; }
+::selection { background: #111; color: #fff; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+[hidden] { display: none !important; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.skip {
+  position: absolute; inset-inline-start: 1rem; top: -4rem; z-index: 90;
+  background: #fff; color: #111; padding: .55rem .8rem; text-decoration: none; font-weight: 700;
+}
+.skip:focus { top: 1rem; }
+
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding: .85rem 1.15rem; position: relative; z-index: 40;
+}
+.site-nav { display: flex; align-items: center; flex-wrap: wrap; gap: .85rem 1.15rem; }
+.site-nav a { text-decoration: none; }
+.nav-toggle {
+  display: none; width: 2.75rem; height: 2.75rem; border: 1px solid currentColor;
+  border-radius: 999px; align-items: center; justify-content: center; position: relative; z-index: 70;
+}
+.nav-toggle i, .nav-toggle i::before, .nav-toggle i::after {
+  display: block; width: 1rem; height: 1.5px; background: currentColor; position: relative;
+}
+.nav-toggle i::before, .nav-toggle i::after { content: ""; position: absolute; inset-inline: 0; }
+.nav-toggle i::before { top: -6px; }
+.nav-toggle i::after { top: 6px; }
+
+.field { display: flex; flex-direction: column; gap: .35rem; }
+.field span { font-size: .82rem; letter-spacing: .04em; }
+input, select, textarea {
+  width: 100%; min-height: 3rem; font-size: 1rem; background: transparent;
+  border: 0; border-bottom: 1px solid currentColor; border-radius: 0; padding: .7rem 0;
+}
+textarea { min-height: 7rem; resize: vertical; }
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: left .2rem center, left .55rem center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.form-grid { display: grid; gap: .9rem 1.2rem; }
+.form-success { outline: none; padding: 1rem 0; }
+.form-success h3 { margin: 0 0 .35rem; }
+.form-success p { margin: 0; }
+
+.wa {
+  position: fixed; z-index: 55; bottom: 1rem; inset-inline-end: 1rem;
+  width: 3.25rem; height: 3.25rem; border-radius: 999px; display: grid; place-items: center;
+  background: #128c4a; color: #fff; text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+}
+.wa svg { width: 1.55rem; height: 1.55rem; }
+
+.intro {
+  position: fixed; inset: 0; z-index: 80; display: grid; place-items: center;
+  background: #141311; color: #f4efe8;
+  font-family: Syne, Heebo, sans-serif; letter-spacing: .28em; font-weight: 800; font-size: .95rem;
+}
+
+.js [data-load] { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+.js [data-load]:nth-child(2) { animation-delay: .08s; }
+.js [data-load]:nth-child(3) { animation-delay: .16s; }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 860px) {
+  .js .nav-toggle { display: inline-flex; }
+  .js .site-nav {
+    position: fixed; inset: 0; z-index: 45; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center; gap: 1.15rem;
+    padding: 5rem 1.5rem 2rem; background: var(--nav-bg, #111); color: var(--nav-ink, #fff);
+    transform: translateY(-102%); visibility: hidden;
+  }
+  .js .site-nav.is-open { transform: none; visibility: visible; }
+  .js .site-nav a { font-size: 1.65rem; font-weight: 600; }
+  .js .site-nav .btn, .js .site-nav .text-link {
+    font-size: 1rem; white-space: nowrap; width: auto; flex: 0 0 auto;
+  }
+  .site-header:has(.is-open) { background: var(--nav-bg, #111); color: var(--nav-ink, #fff); }
+  body.nav-open { overflow: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-load], .intro { animation: none; }
+  .reduce .intro { display: none; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

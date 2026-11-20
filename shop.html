@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <script src="js/boot.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מלח — חנות קרמיקה וחפצי שולחן, יפו</title>
+  <meta name="description" content="מלח היא חנות סטודיו ביפו לקרמיקה וכלים לשולחן. משלוח לכל הארץ ואיסוף עצמי." />
+  <meta property="og:title" content="מלח — חנות קרמיקה וחפצי שולחן, יפו" />
+  <meta property="og:description" content="כלים שנשארים על השולחן. קרמיקה מיפו." />
+  <meta property="og:locale" content="he_IL" />
+  <meta name="theme-color" content="#a34832" />
+  <link rel="icon" href="icons/shop.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/a11y.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body class="shop" data-page="shop">
+  <a class="skip" href="#main">דילוג לתוכן</a>
+  <p class="announce" role="region" aria-label="משלוח">משלוח חינם מעל 350 ₪ · איסוף ביפו · המחירים להמחשה</p>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" id="top">מלח<small>סטודיו · יפו</small></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><span class="sr-only">תפריט</span><i></i></button>
+    <nav id="nav" class="site-nav" data-nav aria-label="ניווט">
+      <a href="#catalog">חנות</a><a href="#story">הסטודיו</a><a href="#ship">משלוח</a>
+      <button class="cart-btn" type="button" data-cart-open>סל <span data-cart-count>0</span></button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="stage">
+      <img src="images/shop/p1.webp" width="900" height="900" alt="סט צלחות קרמיקה על שולחן עץ" fetchpriority="high" />
+      <div>
+        <p class="eyebrow" data-load>יפו · כלים ליום־יום</p>
+        <h1 data-load>כלים שנשארים על השולחן.</h1>
+        <p class="lede" data-load>מלח היא חנות סטודיו. קרמיקה שנעשית כאן, עץ משרון, ודברים שמשתמשים בהם בבוקר. לא רק כשמגיעים אורחים.</p>
+        <p><a href="#catalog">לחנות</a></p>
+      </div>
+    </section>
+    <div class="filters" role="group" aria-label="סינון">
+      <button type="button" data-filter="all" aria-pressed="true">הכול</button>
+      <button type="button" data-filter="ceramic" aria-pressed="false">קרמיקה</button>
+      <button type="button" data-filter="table" aria-pressed="false">שולחן</button>
+    </div>
+    <div class="note" data-cart-note hidden role="dialog" aria-modal="true" aria-labelledby="cart-title"><h2 id="cart-title">סל הדוגמה</h2><p>בסל הדוגמה <strong data-cart-count>0</strong> פריטים. אין סליקה.</p><button type="button" data-cart-close>סגירה</button></div>
+    <section class="catalog" id="catalog">
+      <article class="product wide" data-product="ceramic"><img src="images/shop/hero.webp" alt="כד וכוסות" /><h2>כד וארבע כוסות</h2><p class="cost">260 ₪</p><button class="add" type="button" data-add="כד וארבע כוסות">הוספה</button></article>
+      <article class="product" data-product="ceramic table"><img src="images/shop/p1.webp" alt="צלחות אבן" /><h2>סט צלחות אבן</h2><p class="cost">340 ₪</p><button class="add" type="button" data-add="סט צלחות אבן">הוספה</button></article>
+      <article class="product" data-product="table"><img src="images/shop/p2.webp" alt="קערות וקרשי עץ" /><h2>ערכת שולחן בוקר</h2><p class="cost">420 ₪</p><button class="add" type="button" data-add="ערכת שולחן בוקר">הוספה</button></article>
+      <article class="product" data-product="ceramic"><img src="images/shop/studio.webp" alt="בקבוקי קרמיקה" /><h2>שלישיית בקבוקים</h2><p class="cost">310 ₪</p><button class="add" type="button" data-add="שלישיית בקבוקים">הוספה</button></article>
+      <article class="product" data-product="ceramic"><img src="images/shop/p4.webp" alt="אגרטל מנוקד" /><h2>אגרטל מנוקד</h2><p class="cost">190 ₪</p><button class="add" type="button" data-add="אגרטל מנוקד">הוספה</button></article>
+      <article class="product" data-product="table ceramic"><img src="images/shop/p7.webp" alt="קערות מעוטרות" /><h2>זוג קערות מעוטרות</h2><p class="cost">150 ₪</p><button class="add" type="button" data-add="זוג קערות מעוטרות">הוספה</button></article>
+    </section>
+    <p class="lede" data-empty hidden style="padding-inline:1.1rem">אין פריטים בקטגוריה הזו.</p>
+    <section class="story" id="story">
+      <img src="images/shop/p3.webp" width="900" height="900" alt="ידיים על האובניים" />
+      <div data-reveal>
+        <p class="eyebrow">הסטודיו</p>
+        <h2 class="sec">תמר אלון עובדת ביפו, לא במפעל.</h2>
+        <p>יש הבדל קטן בין כוס לכוס. זה לא פגם, זו הסדרה. אפשר לבוא בין ראשון לחמישי, 11:00–18:00, ולקחת הביתה באותו יום. עולי ציון 18.</p>
+      </div>
+    </section>
+    <section class="voices">
+      <article><p class="stars" aria-label="5 מתוך 5">★★★★★</p><p>«הצבע בתמונה היה הצבע בבית.»</p><p>רותם גבאי <span class="sample">דוגמה</span></p></article>
+      <article><p class="stars" aria-label="5 מתוך 5">★★★★★</p><p>«איסוף ביפו, חמש דקות, בלי תור.»</p><p>אורי פישר <span class="sample">דוגמה</span></p></article>
+      <article><p class="stars" aria-label="4 מתוך 5">★★★★☆</p><p>«הבקבוק קצת שונה. אמרו מראש.»</p><p>שירה אלון <span class="sample">דוגמה</span></p></article>
+    </section>
+    <section class="ship" id="ship">
+      <article><h3>משלוח</h3><p>3–5 ימי עסקים. חינם מעל 350 ₪, אחרת 35 ₪.</p></article>
+      <article><h3>איסוף</h3><p>עולי ציון 18. הודעה כשמוכן, בדרך כלל למחרת.</p></article>
+      <article><h3>החזרה</h3><p>14 יום באריזה המקורית. הזמנה אישית לא חוזרת.</p></article>
+    </section>
+    <section class="faq" data-accordion>
+      <div data-item><h3><button type="button" data-acc-btn aria-expanded="false" id="s1" aria-controls="s1p">הכול עבודת יד? <span>+</span></button></h3><div id="s1p" data-panel hidden><p>הקרמיקה בסטודיו ביפו. העץ אצל נגר בשרון, לפי שרטוט שלנו.</p></div></div>
+      <div data-item><h3><button type="button" data-acc-btn aria-expanded="false" id="s2" aria-controls="s2p">מדיח? <span>+</span></button></h3><div id="s2p" data-panel hidden><p>צלחות וקערות כן. אגרטלים ביד.</p></div></div>
+      <div data-item><h3><button type="button" data-acc-btn aria-expanded="false" id="s3" aria-controls="s3p">הזמנה למסעדה? <span>+</span></button></h3><div id="s3p" data-panel hidden><p>סדרה לוקחת שלושה עד חמישה שבועות. כתבו למטה.</p></div></div>
+    </section>
+    <section class="contact" id="contact">
+      <div><h2 class="sec">הזמנה מיוחדת.</h2><p>לסדרה או למתנה עם תאריך. <a href="tel:+972500000016" dir="ltr">050-000-0016</a></p></div>
+      <div>
+        <form data-form data-success="shop-success">
+          <div class="form-grid two">
+            <label class="field"><span>שם</span><input name="name" required minlength="2" /></label>
+            <label class="field"><span>טלפון</span><input name="phone" type="tel" dir="ltr" required /></label>
+          </div>
+          <label class="field" style="margin-top:.8rem"><span>מה צריך</span><textarea name="message" required placeholder="24 צלחות, גוון חול"></textarea></label>
+          <button class="btn" type="submit" style="margin-top:.8rem">שליחה</button>
+        </form>
+        <div id="shop-success" class="form-success" tabindex="-1" hidden role="status"><h3>ההודעה הוצגה כהדגמה.</h3><p>בחנות אמיתית היינו חוזרים עם זמינות. כאן אין סליקה ואין שמירה.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot">
+    <strong>מלח</strong>
+    <p>עולי ציון 18, יפו · <a href="tel:+972500000016" dir="ltr">050-000-0016</a></p>
+    <p>נבנה כדוגמה על ידי <a href="index.html" dir="ltr" data-studio-name>NEXWEB</a>. העסק, השמות, המחירים וההמלצות בדיוניים.</p>
+  <p><a href="accessibility.html">הצהרת נגישות</a></p>
+    <a class="wa" href="https://wa.me/972500000016?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94%20%D7%A2%D7%9C%20%D7%94%D7%96%D7%9E%D7%A0%D7%94" target="_blank" rel="noopener noreferrer" aria-label="שאלה על הזמנה בוואטסאפ"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.2 1.1-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.8-.3-1.4-.5-2.5-1.1-4.1-3.6-4.2-3.8-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.8-.3h.6c.2 0 .4 0 .5.4.2.6.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.5l-.3.4c-.1.1-.2.2-.1.5.2.3.7 1.1 1.5 1.8.9.8 1.7 1 1.9 1.1.2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.4.7 1.6.8.2.1.4.2.4.3.1.2.1.6-.1 1.2z"/></svg></a>
+  </footer>
+  <p class="toast" data-toast hidden role="status"></p>
+
+  <script src="js/a11y.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/motion.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/shop.js"></script>
+</body>
+</html>

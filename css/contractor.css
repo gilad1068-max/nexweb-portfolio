@@ -1,0 +1,70 @@
+.build {
+  --bg: #e6e1d8; --ink: #121212; --muted: #4e4a44; --rust: #9c3412; --line: #c9c2b6;
+  --nav-bg: #121212; --nav-ink: #f3efe8;
+  background: var(--bg); color: var(--ink);
+  font-family: Heebo, "Arial Hebrew", Arial, sans-serif; line-height: 1.55;
+}
+.build ::selection { background: var(--rust); color: #fff; }
+.build .site-header { position: sticky; top: 0; background: var(--ink); color: #f3efe8; }
+.build .brand { color: #f3efe8; text-decoration: none; font-weight: 800; letter-spacing: -.03em; }
+.build .site-nav a { color: #d9d2c6; font-size: .92rem; }
+.build .hot { background: var(--rust); color: #fff !important; padding: .5rem .8rem; font-weight: 800; }
+.build .hero {
+  padding: 2.2rem 1.1rem 0;
+  background-image: linear-gradient(rgba(18,18,18,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(18,18,18,.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.build .hero-grid { display: grid; gap: 1.2rem; }
+.build .eyebrow { margin: 0 0 .4rem; color: var(--rust); letter-spacing: .16em; font-size: .74rem; font-weight: 800; }
+.build h1 { margin: 0; font-family: "Secular One", Heebo, sans-serif; font-weight: 400; font-size: clamp(3rem, 11vw, 7rem); line-height: .92; max-width: 10ch; }
+.build .lede { color: var(--muted); max-width: 36rem; }
+.build .actions { display: flex; gap: .7rem; flex-wrap: wrap; }
+.build .ghost { border: 1px solid var(--ink); padding: .7rem .9rem; text-decoration: none; font-weight: 700; }
+.build .hero figure { margin: 0; }
+.build .hero img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.build .stats { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); color: #f3efe8; }
+.build .stats article { padding: 1.1rem; border-inline-start: 1px solid rgba(243,239,232,.16); }
+.build .stats strong { display: block; font-family: "Secular One", sans-serif; font-size: 2.2rem; font-weight: 400; }
+.build .stats span { color: #c9c2b6; font-size: .88rem; }
+.build .work, .build .log, .build .ask { padding: 3rem 1.1rem; }
+.build h2 { margin: 0 0 .6rem; font-family: "Secular One", sans-serif; font-weight: 400; font-size: clamp(2rem, 5vw, 3.4rem); }
+.build .svc { display: grid; border-top: 1px solid var(--ink); }
+.build .svc a { display: grid; gap: .2rem; padding: 1rem 0; border-bottom: 1px solid var(--ink); text-decoration: none; }
+.build .svc b { color: var(--rust); font-family: "Secular One", sans-serif; font-weight: 400; }
+.build .svc p { margin: 0; color: var(--muted); }
+.build .case { display: grid; }
+.build .case img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.build .case div { padding: .8rem 1.1rem 1.3rem; display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); }
+.build .case h3 { margin: 0; font-size: 1.15rem; }
+.build .case p { margin: 0; color: var(--muted); font-size: .9rem; }
+.build .pair { display: grid; }
+.build .pair figure { margin: 0; position: relative; }
+.build .pair img { width: 100%; height: 320px; object-fit: cover; }
+.build .pair figcaption { position: absolute; inset-inline-start: 1rem; bottom: 1rem; background: #f3efe8; padding: .25rem .5rem; font-weight: 800; letter-spacing: .08em; font-size: .75rem; }
+.build .log ol { list-style: none; margin: 0; padding: 0; }
+.build .log li { display: grid; grid-template-columns: auto 1fr; gap: .8rem; padding: .9rem 0; border-top: 1px solid var(--line); }
+.build .log b { font-family: "Secular One", sans-serif; color: var(--rust); font-size: 1.3rem; font-weight: 400; }
+.build .log p { margin: .2rem 0 0; color: var(--muted); }
+.build .voices { display: grid; }
+.build .voices blockquote { margin: 0; padding: 1.2rem 1.1rem; border-top: 4px solid var(--rust); background: #f7f4ee; }
+.build .sample { color: var(--rust); font-size: .72rem; font-weight: 800; letter-spacing: .08em; }
+.build .ask { background: var(--ink); color: #f3efe8; }
+.build .ask .lede, .build .ask p { color: #c9c2b6; }
+.build .ask-grid { display: grid; gap: 1.2rem; }
+.build .ask .hot { border: 0; margin-top: 1rem; }
+.build .foot { padding: 1.5rem 1.1rem 5.5rem; display: grid; gap: .4rem; }
+.build .foot strong { font-family: "Secular One", sans-serif; font-size: 1.6rem; font-weight: 400; }
+@media (min-width: 960px) {
+  .build .hero { padding: 3rem 4vw 0; }
+  .build .hero-grid { grid-template-columns: 1.15fr .85fr; align-items: end; }
+  .build .stats { grid-template-columns: repeat(4, 1fr); }
+  .build .work, .build .log, .build .ask, .build .foot { padding-inline: 4vw; }
+  .build .svc { grid-template-columns: 1fr 1fr; }
+  .build .case { grid-template-columns: 1.2fr .8fr; }
+  .build .case:nth-child(even) { grid-template-columns: .8fr 1.2fr; }
+  .build .case:nth-child(even) img { order: 2; }
+  .build .pair { grid-template-columns: 1fr 1fr; }
+  .build .pair img { height: 520px; }
+  .build .voices, .build .ask-grid { grid-template-columns: 1fr 1fr; }
+  .build .form-grid.two { grid-template-columns: 1fr 1fr; }
+}

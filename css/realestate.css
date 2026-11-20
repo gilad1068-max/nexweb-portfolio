@@ -1,0 +1,57 @@
+.estate {
+  --bg: #f3efe7; --ink: #1a1916; --muted: #6a645c; --gold: #5e4318; --line: #e4dccf;
+  --nav-bg: #1a1916; --nav-ink: #f3efe7;
+  background: var(--bg); color: var(--ink);
+  font-family: Assistant, "Arial Hebrew", Arial, sans-serif; line-height: 1.6;
+}
+.estate ::selection { background: #e7d7bc; }
+.estate .brand { font-family: "Frank Ruhl Libre", serif; font-size: 1.7rem; text-decoration: none; font-weight: 500; }
+.estate .site-header { position: absolute; inset-inline: 0; top: 0; color: #f7f3ec; }
+.estate .site-header.is-stuck, .estate .site-header:has(.is-open) { position: fixed; background: rgba(243,239,231,.96); color: var(--ink); }
+.estate .site-nav a { font-size: .92rem; }
+.estate .chip { border: 1px solid currentColor; padding: .45rem .8rem; text-decoration: none; }
+.estate .film { position: relative; min-height: 100svh; color: #f7f3ec; display: flex; align-items: flex-end; }
+.estate .film img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; }
+.estate .film::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(16,14,10,.55), rgba(16,14,10,.05) 48%); }
+.estate .film-copy { position: relative; z-index: 1; padding: 6.5rem 1.15rem 1.4rem; }
+.estate .eyebrow { margin: 0 0 .35rem; letter-spacing: .18em; font-size: .72rem; color: #e6d3b0; }
+.estate h1, .estate h2 { font-family: "Frank Ruhl Libre", serif; font-weight: 500; line-height: 1.08; }
+.estate h1 { margin: 0; font-size: clamp(2.6rem, 8vw, 5.2rem); max-width: 14ch; }
+.estate .meta { display: flex; flex-wrap: wrap; gap: .6rem 1.1rem; margin: .8rem 0; padding: 0; list-style: none; }
+.estate .price { font-variant-numeric: tabular-nums; color: #e6d3b0; font-weight: 700; }
+.estate .strip-head, .estate .spread, .estate .inquiry, .estate .notes { padding: 3rem 1.15rem; }
+.estate .strip { display: flex; gap: .8rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 1.15rem 2rem; }
+.estate .strip a { flex: 0 0 82%; scroll-snap-align: start; text-decoration: none; }
+.estate .strip img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.estate .strip h3 { margin: .55rem 0 .1rem; font-family: "Frank Ruhl Libre", serif; font-weight: 500; font-size: 1.45rem; }
+.estate .strip p { margin: 0; color: var(--muted); }
+.estate .places { display: flex; gap: .8rem; flex-wrap: wrap; list-style: none; padding: 0; margin: .6rem 0 0; }
+.estate .places li { border-bottom: 1px solid var(--gold); }
+.estate .spread { display: grid; gap: 1.2rem; align-items: center; }
+.estate .spread img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.estate .steps { display: grid; gap: .9rem; margin-top: 1rem; }
+.estate .steps article { border-top: 1px solid var(--line); padding-top: .7rem; }
+.estate .steps h3 { margin: 0 0 .2rem; font-size: 1.05rem; }
+.estate .steps p { margin: 0; color: var(--muted); }
+.estate .reviews blockquote { margin: 0 0 1.2rem; font-family: "Frank Ruhl Libre", serif; font-size: 1.45rem; line-height: 1.35; }
+.estate .sample { color: var(--gold); font-size: .72rem; letter-spacing: .1em; }
+.estate .inquiry { background: #fff; }
+.estate .inquiry-grid { display: grid; gap: 1.2rem; }
+.estate .notes { display: grid; gap: 1rem; }
+.estate .notes article { border-top: 1px solid var(--line); padding-top: .7rem; }
+.estate .notes h3 { margin: 0 0 .25rem; }
+.estate .notes p { margin: 0; color: var(--muted); }
+.estate .foot { padding: 2rem 1.15rem 5.5rem; color: var(--muted); display: grid; gap: .4rem; }
+.estate .foot strong { font-family: "Frank Ruhl Libre", serif; color: var(--ink); font-size: 1.7rem; font-weight: 500; }
+.estate .solid { display: inline-flex; min-height: 2.8rem; align-items: center; padding: 0 1rem; background: var(--ink); color: #f3efe7; text-decoration: none; border: 0; font-weight: 700; }
+@media (min-width: 960px) {
+  .estate .film-copy { padding-inline: 6vw; padding-bottom: 3rem; }
+  .estate .strip { padding-inline: 6vw; }
+  .estate .strip a { flex-basis: 32%; }
+  .estate .strip-head, .estate .spread, .estate .inquiry, .estate .notes, .estate .foot { padding-inline: 6vw; }
+  .estate .spread { grid-template-columns: .7fr 1.1fr; gap: 3rem; }
+  .estate .steps { grid-template-columns: repeat(4, 1fr); }
+  .estate .inquiry-grid { grid-template-columns: .8fr 1.2fr; }
+  .estate .notes { grid-template-columns: 1fr 1fr; }
+  .estate .form-grid.two { grid-template-columns: 1fr 1fr; }
+}

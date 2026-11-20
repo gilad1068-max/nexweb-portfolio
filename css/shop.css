@@ -1,0 +1,59 @@
+.shop {
+  --bg: #f7f2eb; --ink: #241c17; --muted: #6d5f56; --terra: #a34832; --line: #e6dcd2;
+  --nav-bg: #241c17; --nav-ink: #f7f2eb;
+  background: var(--bg); color: var(--ink);
+  font-family: Heebo, "Arial Hebrew", Arial, sans-serif; line-height: 1.55;
+}
+.shop ::selection { background: #edd5cb; }
+.shop .announce { background: var(--terra); color: #fff8f4; text-align: center; font-size: .85rem; padding: .45rem 1rem; }
+.shop .site-header { position: sticky; top: 0; background: rgba(247,242,235,.96); border-bottom: 1px solid var(--line); }
+.shop .brand { text-decoration: none; font-weight: 800; font-size: 1.4rem; letter-spacing: -.04em; }
+.shop .brand small { display: block; font-weight: 500; color: var(--muted); font-size: .72rem; }
+.shop .cart-btn { border: 1px solid var(--ink); border-radius: 999px; min-height: 2.4rem; padding: 0 .8rem; font-weight: 700; }
+.shop .stage { display: grid; gap: 1.2rem; padding: 1.4rem 1.1rem 1rem; align-items: center; }
+.shop .eyebrow { color: var(--terra); font-weight: 700; margin: 0 0 .3rem; letter-spacing: .06em; font-size: .8rem; }
+.shop h1 { margin: 0; font-weight: 750; letter-spacing: -.04em; font-size: clamp(2.6rem, 8vw, 4.8rem); line-height: 1.02; }
+.shop .lede { color: var(--muted); max-width: 34rem; }
+.shop .stage img { width: 100%; aspect-ratio: 5/4; object-fit: cover; object-position: center; }
+.shop .filters { display: flex; gap: 1rem; padding: .4rem 1.1rem 1rem; }
+.shop .filters button { font-weight: 700; border-bottom: 1px solid transparent; padding-bottom: .15rem; }
+.shop .filters button[aria-pressed="true"] { border-color: var(--ink); }
+.shop .note { margin: 0 1.1rem 1rem; padding: .8rem; background: #fff; border: 1px solid var(--line); }
+.shop .note h2 { margin: 0 0 .35rem; font-size: 1.2rem; }
+.shop .catalog { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem .7rem; padding: 0 1.1rem 2rem; }
+.shop .product img { width: 100%; aspect-ratio: 1; object-fit: cover; background: #efe6dc; }
+.shop .product h2 { margin: .45rem 0 0; font-size: 1rem; font-weight: 650; }
+.shop .cost { margin: 0; font-variant-numeric: tabular-nums; }
+.shop .add { margin-top: .4rem; border-bottom: 1px solid var(--ink); font-weight: 700; padding-bottom: .1rem; }
+.shop .wide { grid-column: 1 / -1; }
+.shop .wide img { aspect-ratio: 16/10; }
+.shop .story { display: grid; gap: 1rem; padding: 1rem 1.1rem 2rem; align-items: center; }
+.shop .story img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.shop h2.sec { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 .4rem; letter-spacing: -.03em; }
+.shop .voices, .shop .ship { display: grid; gap: .8rem; padding: 0 1.1rem 2rem; }
+.shop .voices article, .shop .ship article { background: #fff; padding: .9rem; }
+.shop .stars { color: var(--terra); letter-spacing: .12em; margin: 0; }
+.shop .sample { color: #5d6a45; font-size: .72rem; font-weight: 800; }
+.shop .faq { padding: 0 1.1rem 2rem; }
+.shop .faq button { width: 100%; text-align: start; display: flex; justify-content: space-between; padding: .85rem 0; border-bottom: 1px solid var(--line); font-weight: 700; }
+.shop .faq p { color: var(--muted); }
+.shop .contact { margin: 0 1.1rem 2rem; display: grid; gap: 1rem; }
+.shop .btn { background: var(--ink); color: #f7f2eb; min-height: 3rem; padding: 0 1.1rem; font-weight: 800; border: 0; }
+.shop .toast { position: fixed; z-index: 56; inset-inline: 1rem; bottom: 5rem; background: var(--ink); color: #fff; padding: .75rem .9rem; }
+.shop .foot { padding: 1rem 1.1rem 5.5rem; color: var(--muted); display: grid; gap: .3rem; }
+.shop .foot strong { color: var(--ink); font-size: 1.3rem; }
+@media (hover: hover) {
+  .shop .product img { transition: transform .8s ease; }
+  .shop .product:hover img { transform: scale(1.04); }
+}
+@media (min-width: 900px) {
+  .shop .stage { grid-template-columns: .9fr 1.1fr; padding: 2rem 5vw; gap: 3rem; }
+  .shop .catalog { grid-template-columns: 1.3fr 1fr 1fr; padding-inline: 5vw; }
+  .shop .wide { grid-column: span 2; grid-row: span 2; }
+  .shop .wide img { aspect-ratio: 1; height: 100%; }
+  .shop .story { grid-template-columns: .8fr 1.2fr; padding-inline: 5vw; gap: 3rem; }
+  .shop .voices, .shop .ship { grid-template-columns: repeat(3, 1fr); padding-inline: 5vw; }
+  .shop .faq, .shop .foot, .shop .filters { padding-inline: 5vw; }
+  .shop .contact { margin-inline: 5vw; grid-template-columns: .8fr 1.2fr; }
+  .shop .form-grid.two { grid-template-columns: 1fr 1fr; }
+}

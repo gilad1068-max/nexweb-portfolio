@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <script src="js/boot.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEXWEB — סטודיו לאתרים לעסקים בישראל</title>
+  <meta name="description" content="NEXWEB מעצבת ובונה דפי נחיתה, אתרי תדמית וחנויות לעסקים בישראל. עברית מלאה, נגישות לפי ת״י 5568." />
+  <meta property="og:title" content="NEXWEB — סטודיו לאתרים לעסקים בישראל" />
+  <meta property="og:description" content="NEXWEB. דפי נחיתה, אתרי תדמית וחנויות בעברית, בנגישות לפי ת״י 5568." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:site_name" content="NEXWEB" />
+  <meta name="theme-color" content="#0c0c0d" />
+  <link rel="icon" href="icons/nexweb.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Syne:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/a11y.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body class="home" data-page="home">
+  <a class="skip" href="#main">דילוג לתוכן</a>
+  <header class="site-header" data-header>
+    <a class="wordmark" href="index.html" dir="ltr" data-studio-name aria-label="NEXWEB, עמוד הבית">NEXWEB</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><span class="sr-only">תפריט</span><i></i></button>
+    <nav id="nav" class="site-nav" data-nav aria-label="ראשי">
+      <a href="#work">עבודות</a>
+      <a href="#services">שירותים</a>
+      <a href="#process">תהליך</a>
+      <a href="#faq">שאלות</a>
+      <a href="#contact">שיחה</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title">אתרים לעסקים בישראל.</h1>
+          <p class="lede">NEXWEB מעצבת ובונה דפי נחיתה, אתרי תדמית וחנויות. כל אתר נכתב בעברית ונבנה לפי ת״י 5568.</p>
+          <div class="hero-actions">
+            <a class="btn-accent" href="#contact">שיחת היכרות</a>
+            <a class="btn-ghost" href="#work">ראו עבודות</a>
+          </div>
+          <ul class="trust" role="list">
+            <li>עיצוב מותאם אישית</li>
+            <li>נגישות לפי תקן</li>
+            <li>מותאם למובייל</li>
+            <li>SEO</li>
+          </ul>
+        </div>
+        <div class="stage" aria-hidden="true">
+          <img class="phone p1" src="images/shots/clinic.webp" width="390" height="844" alt="" />
+          <img class="phone p2" src="images/shots/restaurant.webp" width="390" height="844" alt="" />
+          <img class="phone p3" src="images/shots/realestate.webp" width="390" height="844" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <h2 id="work-title" class="sec">עבודות נבחרות</h2>
+        <ul class="cases" role="list">
+          <li>
+            <article class="case" data-reveal>
+              <a href="restaurant.html">
+                <img src="images/shots/restaurant.webp" width="390" height="844" alt="צילום מסך של אתר כרמל 18" />
+                <span class="case-body">
+                  <span class="name">כרמל 18</span>
+                  <span class="kind">מסעדה · חיפה</span>
+                  <span class="desc">דף עם תפריט, שעות והזמנת שולחן.</span>
+                  <span class="tags"><span>הזמנת שולחן</span><span>תפריט</span><span>RTL</span></span>
+                  <span class="more">לצפייה באתר</span>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="case" data-reveal>
+              <a href="clinic.html">
+                <img src="images/shots/clinic.webp" width="390" height="844" alt="צילום מסך של אתר קליניקת שקד" />
+                <span class="case-body">
+                  <span class="name">קליניקת שקד</span>
+                  <span class="kind">רפואת שיניים · תל אביב</span>
+                  <span class="desc">דף שקט לקביעת תור, עם צוות ושאלות נפוצות.</span>
+                  <span class="tags"><span>קביעת תור</span><span>צוות</span><span>נגישות</span></span>
+                  <span class="more">לצפייה באתר</span>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="case" data-reveal>
+              <a href="contractor.html">
+                <img src="images/shots/contractor.webp" width="390" height="844" alt="צילום מסך של אתר עומר בנייה" />
+                <span class="case-body">
+                  <span class="name">עומר בנייה</span>
+                  <span class="kind">שיפוצים · גוש דן</span>
+                  <span class="desc">דף עבודות עם פרויקטים ובקשת מדידה.</span>
+                  <span class="tags"><span>פרויקטים</span><span>מדידה</span><span>RTL</span></span>
+                  <span class="more">לצפייה באתר</span>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="case" data-reveal>
+              <a href="realestate.html">
+                <img src="images/shots/realestate.webp" width="390" height="844" alt="צילום מסך של אתר חוף נדל״ן" />
+                <span class="case-body">
+                  <span class="name">חוף</span>
+                  <span class="kind">נדל״ן · נווה צדק</span>
+                  <span class="desc">דף נכסים עם תמונות ופנייה ישירה.</span>
+                  <span class="tags"><span>נכסים</span><span>גלריה</span><span>פנייה</span></span>
+                  <span class="more">לצפייה באתר</span>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="case" data-reveal>
+              <a href="coach.html">
+                <img src="images/shots/coach.webp" width="390" height="844" alt="צילום מסך של אתר יעל אביב" />
+                <span class="case-body">
+                  <span class="name">יעל אביב</span>
+                  <span class="kind">אימון עסקי</span>
+                  <span class="desc">דף מותג אישי עם מסלולים ושיחת היכרות.</span>
+                  <span class="tags"><span>מותג אישי</span><span>מסלולים</span><span>טופס</span></span>
+                  <span class="more">לצפייה באתר</span>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="case" data-reveal>
+              <a href="shop.html">
+                <img src="images/shots/shop.webp" width="390" height="844" alt="צילום מסך של אתר מלח" />
+                <span class="case-body">
+                  <span class="name">מלח</span>
+                  <span class="kind">חנות קרמיקה · יפו</span>
+                  <span class="desc">קטלוג עם סינון וסל להדגמה, בלי סליקה.</span>
+                  <span class="tags"><span>קטלוג</span><span>סל</span><span>גלריה</span></span>
+                  <span class="more">לצפייה באתר</span>
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <h2 id="services-title" class="sec">שירותים</h2>
+        <div class="svc-grid">
+          <article class="svc-card" id="svc-land" data-reveal>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="5" width="20" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 11h12M10 16h8" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>דפי נחיתה</h3>
+            <p>עמוד אחד שמכוון את המבקר לפעולה אחת: שיחה, תור או הזמנה.</p>
+            <ul>
+              <li>מסר אחד וקריאה לפעולה</li>
+              <li>טופס יצירת קשר</li>
+              <li>כפתור וואטסאפ</li>
+            </ul>
+          </article>
+          <article class="svc-card" id="svc-brand" data-reveal>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="6" width="22" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 26h22" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>אתרי תדמית</h3>
+            <p>כמה מסכים שמסבירים את העסק בשפה אחת, בלי מצגת שהודבקה לאתר.</p>
+            <ul>
+              <li>מבנה לפי סדר ההחלטה</li>
+              <li>שפה אחידה</li>
+              <li>עמוד יצירת קשר</li>
+            </ul>
+          </article>
+          <article class="svc-card" id="svc-shop" data-reveal>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 10h16l-1.4 12H9.4L8 10z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 10V8a4 4 0 0 1 8 0v2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>חנויות</h3>
+            <p>קטלוג ומוצר שנראים כמו המותג, עם סל מוכן לחיבור סליקה.</p>
+            <ul>
+              <li>עמודי מוצר</li>
+              <li>סל להדגמה</li>
+              <li>הנחיה לחיבור סליקה</li>
+            </ul>
+          </article>
+          <article class="svc-card" id="svc-a11y" data-reveal>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="7" r="2.2" fill="currentColor"/><path d="M8 13h16M16 13v12M16 18l-5 8M16 18l5 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>נגישות וקידום</h3>
+            <p>מבנה, ניגודיות ומהירות כחלק מהבנייה, לא כשכבה בסוף.</p>
+            <ul>
+              <li>ת״י 5568 ורמת AA</li>
+              <li>כותרות ומבנה לקידום</li>
+              <li>הצהרת נגישות</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <h2 id="why-title" class="sec">למה NEXWEB</h2>
+        <ul class="why-grid" role="list">
+          <li data-reveal><h3>מהירות</h3><p>דף נחיתה עולה בדרך כלל תוך שבוע עד עשרה ימים מרגע שהחומרים אצלנו.</p></li>
+          <li data-reveal><h3>בלי תבנית</h3><p>לכל עסק מבנה ושפה משלו. מסעדה לא מקבלת את הדף של קליניקה.</p></li>
+          <li data-reveal><h3>נגישות ו־SEO</h3><p>ת״י 5568, כותרות תקינות וטעינה קלה נכנסים לבנייה מההתחלה.</p></li>
+          <li data-reveal><h3>ליווי ותחזוקה</h3><p>אחרי העלייה נשארים לדומיין, לתיקונים קטנים ולמה שמשתנה בעסק.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <h2 id="process-title" class="sec">תהליך</h2>
+        <ol class="steps" role="list">
+          <li data-reveal><h3>שיחה</h3><p>מי נכנס לאתר, ומה הוא צריך להחליט.</p></li>
+          <li data-reveal><h3>מבנה</h3><p>סדר המסכים והפעולה המרכזית, לפני העיצוב.</p></li>
+          <li data-reveal><h3>עיצוב ובנייה</h3><p>דף אחד לטלפון ולמסך רחב.</p></li>
+          <li data-reveal><h3>עלייה</h3><p>דומיין, וואטסאפ, טופס והצהרת נגישות.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="includes" id="includes" aria-labelledby="includes-title">
+      <div class="wrap">
+        <h2 id="includes-title" class="sec">בכל אתר</h2>
+        <ul class="checks" role="list">
+          <li>דומיין ואחסון</li>
+          <li>SSL</li>
+          <li>טפסי לידים</li>
+          <li>וואטסאפ</li>
+          <li>Google Analytics</li>
+          <li>הצהרת נגישות</li>
+          <li>התאמה למובייל</li>
+          <li>עברית מלאה</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" data-accordion aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title" class="sec">שאלות</h2>
+        <div class="faq-list">
+          <div data-item>
+            <h3><button type="button" data-acc-btn aria-expanded="false" id="f1" aria-controls="f1p">כמה זמן נמשך פרויקט? <span aria-hidden="true">+</span></button></h3>
+            <div id="f1p" data-panel hidden><p>דף נחיתה נמשך בדרך כלל שבוע עד עשרה ימים מרגע שיש טקסטים ותמונות. אתר תדמית נמשך שלושה עד חמישה שבועות.</p></div>
+          </div>
+          <div data-item>
+            <h3><button type="button" data-acc-btn aria-expanded="false" id="f2" aria-controls="f2p">מי כותב את הטקסט? <span aria-hidden="true">+</span></button></h3>
+            <div id="f2p" data-panel hidden><p>אנחנו כותבים בעברית. טקסט קיים נערך כך שיהיה ברור.</p></div>
+          </div>
+          <div data-item>
+            <h3><button type="button" data-acc-btn aria-expanded="false" id="f3" aria-controls="f3p">האתר יהיה זהה לדוגמאות? <span aria-hidden="true">+</span></button></h3>
+            <div id="f3p" data-panel hidden><p>לא. הדוגמאות מציגות כיוונים שונים. האתר נגזר מהעסק.</p></div>
+          </div>
+          <div data-item>
+            <h3><button type="button" data-acc-btn aria-expanded="false" id="f4" aria-controls="f4p">מה כוללת הנגישות? <span aria-hidden="true">+</span></button></h3>
+            <div id="f4p" data-panel hidden><p>מבנה, ניגודיות, מקלדת, טפסים, תפריט נגישות והצהרת נגישות לפי ת״י 5568.</p></div>
+          </div>
+          <div data-item>
+            <h3><button type="button" data-acc-btn aria-expanded="false" id="f5" aria-controls="f5p">מה מקבלים עם האתר? <span aria-hidden="true">+</span></button></h3>
+            <div id="f5p" data-panel hidden><p>דומיין ואחסון, SSL, טפסי לידים, וואטסאפ, Google Analytics והצהרת נגישות. הפירוט מופיע למעלה.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-title" class="sec">שיחת היכרות</h2>
+          <p class="lede">עשרים דקות על העסק. מספר הטלפון להדגמה. בפנייה אמיתית חוזרים בוואטסאפ.</p>
+          <p class="phone"><a href="tel:+972500000000" dir="ltr">050-000-0000</a></p>
+          <p><a href="mailto:hello@nexweb.co.il">hello@nexweb.co.il</a></p>
+          <p class="contact-wa"><a class="btn-accent" href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%90%D7%AA%D7%A8" target="_blank" rel="noopener noreferrer">וואטסאפ</a></p>
+        </div>
+        <div>
+          <form data-form data-success="home-success">
+            <div class="form-grid two">
+              <label class="field"><span>שם</span><input name="name" autocomplete="name" required minlength="2" /></label>
+              <label class="field"><span>טלפון</span><input name="phone" type="tel" inputmode="tel" dir="ltr" autocomplete="tel" required /></label>
+            </div>
+            <div class="form-grid" style="margin-top:1rem">
+              <label class="field"><span>סוג אתר</span>
+                <select name="kind" required>
+                  <option value="">בחרו</option>
+                  <option>דף נחיתה</option>
+                  <option>אתר תדמית</option>
+                  <option>חנות</option>
+                  <option>עדיין לא בטוח</option>
+                </select>
+              </label>
+              <label class="field"><span>העסק</span><textarea name="message" required minlength="4" placeholder="למשל: קליניקת שיניים, צריך קביעת תור"></textarea></label>
+              <button class="btn-ink" type="submit">שליחה</button>
+            </div>
+          </form>
+          <p class="hint">השליחה להדגמה בלבד. הפרטים אינם נשמרים.</p>
+          <div id="home-success" class="form-success" tabindex="-1" hidden role="status">
+            <h3>הפנייה הוצגה כהדגמה.</h3>
+            <p>באתר חי חוזרים בוואטסאפ. כאן אין שרת, והפרטים לא נשמרו.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot-grid">
+      <div>
+        <a class="wordmark" href="index.html" dir="ltr" data-studio-name>NEXWEB</a>
+        <p>סטודיו לאתרים, תל אביב. © 2026 <span dir="ltr" data-studio-name>NEXWEB</span></p>
+      </div>
+      <nav class="foot-nav" aria-label="ניווט בתחתית">
+        <a href="#work">עבודות</a>
+        <a href="#why">למה NEXWEB</a>
+        <a href="#process">תהליך</a>
+        <a href="#faq">שאלות</a>
+        <a href="#contact">שיחה</a>
+      </nav>
+      <nav class="foot-nav" aria-label="שירותים">
+        <a href="#svc-land">דפי נחיתה</a>
+        <a href="#svc-brand">אתרי תדמית</a>
+        <a href="#svc-shop">חנויות</a>
+        <a href="#svc-a11y">נגישות וקידום</a>
+      </nav>
+      <div class="foot-contact">
+        <a href="tel:+972500000000" dir="ltr">050-000-0000</a>
+        <a href="mailto:hello@nexweb.co.il">hello@nexweb.co.il</a>
+        <a href="accessibility.html">הצהרת נגישות</a>
+      </div>
+    </div>
+    <a class="wa" href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%90%D7%AA%D7%A8" target="_blank" rel="noopener noreferrer" aria-label="שיחה עם NEXWEB בוואטסאפ"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.2 1.1-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.8-.3-1.4-.5-2.5-1.1-4.1-3.6-4.2-3.8-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.8-.3h.6c.2 0 .4 0 .5.4.2.6.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.5l-.3.4c-.1.1-.2.2-.1.5.2.3.7 1.1 1.5 1.8.9.8 1.7 1 1.9 1.1.2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.4.7 1.6.8.2.1.4.2.4.3.1.2.1.6-.1 1.2z"/></svg></a>
+  </footer>
+  <nav class="dock" aria-label="פעולות מהירות">
+    <a href="#contact">שיחת היכרות</a>
+    <a href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%90%D7%AA%D7%A8" target="_blank" rel="noopener noreferrer">וואטסאפ</a>
+  </nav>
+  <script src="js/a11y.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/motion.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

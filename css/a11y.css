@@ -1,0 +1,86 @@
+.a11y-root { position: relative; z-index: 80; }
+.a11y-fab {
+  position: fixed; z-index: 80; bottom: 1rem; inset-inline-start: 1rem;
+  width: 3.25rem; height: 3.25rem; border-radius: 999px;
+  display: grid; place-items: center;
+  background: #111; color: #fff; border: 2px solid #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+}
+.a11y-fab:focus-visible, .a11y-panel :focus-visible {
+  outline: 3px solid #ffe14a; outline-offset: 3px;
+}
+.a11y-panel {
+  position: fixed; z-index: 81; inset-inline-start: .75rem;
+  bottom: 5rem; width: min(22rem, calc(100% - 1.5rem));
+  max-height: min(72vh, 36rem); overflow: auto;
+  background: #0c0c0e; color: #f6f6f4; border: 2px solid #fff;
+  padding: 1rem 1rem 1.1rem; box-shadow: 0 18px 50px rgba(0,0,0,.4);
+}
+.a11y-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.a11y-head h2 { margin: 0; font-size: 1.35rem; font-family: inherit; }
+.a11y-head button, .a11y-reset, .a11y-size button, .a11y-options button {
+  min-height: 2.75rem; border: 1px solid #fff; color: #fff; background: transparent;
+  padding: .4rem .75rem; font-weight: 700;
+}
+.a11y-note, .a11y-more { margin: .7rem 0; font-size: .95rem; }
+.a11y-more a { color: #ffe14a; }
+.a11y-size { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
+.a11y-options { list-style: none; margin: .8rem 0; padding: 0; display: grid; gap: .45rem; }
+.a11y-options button { width: 100%; text-align: start; }
+.a11y-options button[aria-pressed="true"] { background: #ffe14a; color: #111; border-color: #ffe14a; }
+.a11y-reset { width: 100%; }
+.a11y-size button:disabled { opacity: .4; }
+
+html.a11y-lg { font-size: 118%; }
+html.a11y-xl { font-size: 135%; }
+html.a11y-gray body > *:not(.a11y-root) { filter: grayscale(1); }
+html.a11y-links a {
+  background: #fff200 !important; color: #111 !important;
+  text-decoration: underline !important; text-underline-offset: .15em;
+}
+html.a11y-font body,
+html.a11y-font h1, html.a11y-font h2, html.a11y-font h3, html.a11y-font button, html.a11y-font input {
+  font-family: "Arial Hebrew", Arial, "Segoe UI", sans-serif !important;
+  letter-spacing: 0 !important;
+}
+html.a11y-contrast body,
+html.a11y-contrast header,
+html.a11y-contrast main,
+html.a11y-contrast footer,
+html.a11y-contrast section,
+html.a11y-contrast article,
+html.a11y-contrast .plan,
+html.a11y-contrast .contact,
+html.a11y-contrast .dock { background: #000 !important; color: #fff !important; }
+html.a11y-contrast h1, html.a11y-contrast h2, html.a11y-contrast h3, html.a11y-contrast p,
+html.a11y-contrast li, html.a11y-contrast span, html.a11y-contrast strong, html.a11y-contrast label {
+  color: #fff !important;
+}
+html.a11y-contrast a { color: #ffe14a !important; text-decoration: underline; }
+html.a11y-contrast button, html.a11y-contrast .btn, html.a11y-contrast .solid, html.a11y-contrast .pill,
+html.a11y-contrast .hot, html.a11y-contrast input, html.a11y-contrast select, html.a11y-contrast textarea {
+  background: #000 !important; color: #fff !important; border: 2px solid #fff !important;
+}
+html.a11y-contrast .a11y-options button[aria-pressed="true"] { background: #ffe14a !important; color: #111 !important; }
+html.a11y-cursor, html.a11y-cursor * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Ccircle cx='16' cy='16' r='12' fill='black' stroke='white' stroke-width='3'/%3E%3C/svg%3E") 16 16, auto !important;
+}
+html.reduce *, html.reduce *::before, html.reduce *::after,
+html.a11y-motion *, html.a11y-motion *::before, html.a11y-motion *::after {
+  animation: none !important; transition: none !important; scroll-behavior: auto !important;
+}
+html.reduce .intro, html.a11y-motion .intro { display: none !important; }
+
+@media (max-width: 860px) {
+  .home .a11y-fab {
+    inset-inline-start: auto;
+    inset-inline-end: .75rem;
+    bottom: calc(4.4rem + env(safe-area-inset-bottom));
+  }
+  .home .a11y-panel {
+    inset-inline-start: auto;
+    inset-inline-end: .75rem;
+    bottom: calc(8.2rem + env(safe-area-inset-bottom));
+  }
+}
+body.a11y-open { overflow: hidden; }

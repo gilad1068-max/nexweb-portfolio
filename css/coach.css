@@ -1,0 +1,56 @@
+.coach {
+  --paper: #f3efe6; --ink: #1a1430; --muted: #5c5470; --coral: #ff4d2e; --night: #16122c;
+  --nav-bg: #16122c; --nav-ink: #f3efe6;
+  background: var(--paper); color: var(--ink);
+  font-family: Rubik, "Arial Hebrew", Arial, sans-serif; line-height: 1.55;
+}
+.coach ::selection { background: var(--coral); color: #1a0a06; }
+.coach .site-header { position: sticky; top: 0; background: rgba(243,239,230,.94); }
+.coach .brand { font-weight: 800; text-decoration: none; letter-spacing: -.04em; font-size: 1.15rem; }
+.coach .site-nav a { color: var(--muted); font-weight: 600; }
+.coach .hot { background: var(--coral); color: #2a0c08 !important; padding: .55rem .85rem; font-weight: 800; }
+.coach .hero { padding: 6vh 1.1rem 2rem; display: grid; gap: 1rem; }
+.coach .eyebrow { color: #9a220f; font-weight: 700; letter-spacing: .08em; font-size: .78rem; margin: 0 0 .4rem; }
+.coach h1 { margin: 0; font-weight: 800; letter-spacing: -.045em; font-size: clamp(3.4rem, 13vw, 8rem); line-height: .88; }
+.coach h1 em { font-style: normal; color: #9a220f; }
+.coach .lede { color: var(--muted); max-width: 34rem; }
+.coach .actions { display: flex; gap: .7rem; flex-wrap: wrap; align-items: center; }
+.coach .ghost { border: 1px solid var(--ink); padding: .65rem .85rem; text-decoration: none; font-weight: 700; }
+.coach .portrait { margin: 0; justify-self: center; width: min(100%, 420px); }
+.coach .portrait img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 180px 180px 12px 12px; box-shadow: 10px 10px 0 var(--coral); }
+.coach .manifesto { background: var(--night); color: #f3efe6; padding: 18vh 1.2rem; }
+.coach .manifesto p { margin: 0; font-weight: 650; font-size: clamp(1.7rem, 5vw, 3rem); line-height: 1.25; max-width: 16ch; }
+.coach .fit, .coach .offers, .coach .about, .coach .apply { padding: 3.2rem 1.1rem; }
+.coach h2 { margin: 0 0 .6rem; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -.03em; }
+.coach .two { display: grid; gap: 1rem; }
+.coach .two article { padding: 1rem 0; border-top: 1px solid #ddd4c6; }
+.coach .two.no { background: var(--night); color: #f3efe6; padding: 1rem; }
+.coach .two ul { margin: .4rem 0 0; padding-inline-start: 1.1rem; color: var(--muted); }
+.coach .two.no ul { color: #d5d0e4; }
+.coach .offer { padding: 1.2rem 0; border-top: 1px solid #ddd4c6; display: grid; gap: .3rem; }
+.coach .offer.main { background: var(--night); color: #f3efe6; padding: 1.4rem 1rem; }
+.coach .cost { font-size: 2rem; font-weight: 800; letter-spacing: -.04em; margin: 0; }
+.coach .offer p, .coach .offer li { color: var(--muted); }
+.coach .offer.main p, .coach .offer.main li { color: #d5d0e4; }
+.coach .about-grid { display: grid; gap: 1rem; }
+.coach .about img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.coach .reviews { display: grid; }
+.coach .reviews article { padding: 1.1rem; border-inline-start: 4px solid var(--coral); }
+.coach .sample { color: #9a220f; font-size: .72rem; font-weight: 800; }
+.coach .apply-grid { display: grid; gap: 1rem; }
+.coach .faq button { width: 100%; text-align: start; display: flex; justify-content: space-between; padding: .9rem 0; border-bottom: 1px solid #ddd4c6; font-weight: 700; }
+.coach .faq p { color: var(--muted); }
+.coach .faq { padding: 0 1.1rem 2rem; }
+.coach .foot { padding: 1.5rem 1.1rem 5.5rem; display: grid; gap: .3rem; }
+@media (min-width: 960px) {
+  .coach .hero { grid-template-columns: 1.15fr .85fr; align-items: end; padding: 8vh 5vw 3rem; }
+  .coach .portrait { justify-self: end; }
+  .coach .manifesto { padding-inline: 8vw; }
+  .coach .fit, .coach .offers, .coach .about, .coach .apply, .coach .faq, .coach .foot { padding-inline: 5vw; }
+  .coach .two { grid-template-columns: 1.2fr .8fr; }
+  .coach .offers { display: grid; grid-template-columns: .8fr 1.2fr .8fr; gap: 1rem; align-items: stretch; }
+  .coach .offer { border-top: 0; }
+  .coach .about-grid, .coach .apply-grid { grid-template-columns: .9fr 1.1fr; align-items: center; gap: 2rem; }
+  .coach .reviews { grid-template-columns: repeat(3, 1fr); }
+  .coach .form-grid.two { grid-template-columns: 1fr 1fr; }
+}

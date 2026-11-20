@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <script src="js/boot.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>כרמל 18 — מטבח ישראלי בחיפה</title>
+  <meta name="description" content="כרמל 18 הוא מטבח עונתי על הכרמל בחיפה. ירקות מהשוק, דגים מהבוקר, והזמנת שולחן לערב." />
+  <meta property="og:title" content="כרמל 18 — מטבח ישראלי בחיפה" />
+  <meta property="og:description" content="שולחן ארוך, תפריט שמתחלף, ויין שפותחים לאט." />
+  <meta property="og:locale" content="he_IL" />
+  <meta name="theme-color" content="#110d0b" />
+  <link rel="icon" href="icons/restaurant.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/a11y.css" />
+  <link rel="stylesheet" href="css/restaurant.css" />
+</head>
+<body class="rest" data-page="restaurant">
+  <a class="skip" href="#main">דילוג לתוכן</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" id="top">כרמל 18</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><span class="sr-only">תפריט</span><i></i></button>
+    <nav id="nav" class="site-nav" data-nav aria-label="ניווט">
+      <a href="#menu">תפריט</a><a href="#kitchen">המטבח</a><a href="#visit">ביקור</a>
+      <a class="reserve-link" href="#book">הזמינו שולחן</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media"><img src="images/restaurant/hero.webp" width="1400" height="963" alt="שולחן במסעדה, צלחת מוגשת וכוסות יין" data-parallax fetchpriority="high" /></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-load>מטבח ישראלי · חיפה</p>
+        <h1 data-load>האש<br>נמוכה.</h1>
+        <p data-load>כרמל 18 הוא שולחן ארוך על הכרמל. ירקות מהבוקר, דג על גחלים, ויין שפותחים לפני שמחליטים. באים לאכול לאט.</p>
+        <div class="hero-actions"><a class="solid" href="#book">הזמינו שולחן</a><a class="ghost" href="#menu">התפריט</a></div>
+      </div>
+    </section>
+    <div class="rail" data-marquee aria-hidden="true"><div class="rail-track" data-track><span>דניס על גחלים</span><span>חציל שרוף</span><span>יין ישראלי</span><span>שולחן ארוך</span><span>כרמל</span><span>דניס על גחלים</span><span>חציל שרוף</span><span>יין ישראלי</span><span>שולחן ארוך</span><span>כרמל</span></div></div>
+    <section class="menu-stage" id="menu">
+      <div class="menu-visual"><img src="images/restaurant/interior.webp" width="1400" height="963" alt="חלל הישיבה, שולחנות עגולים ותאורת פליז" data-parallax /></div>
+      <div class="menu-list">
+        <p class="eyebrow">הערב, לדוגמה</p>
+        <h2>תפריט קצר. מה שהגיע בבוקר.</h2>
+        <p class="course">פתיחה</p>
+        <article class="dish"><h3>חציל שרוף וטחינה גולמית</h3><span class="price">48 ₪</span><p>לימון כבוש, שמן זית.</p></article>
+        <article class="dish"><h3>דג נא בסגנון השוק</h3><span class="price">62 ₪</span><p>צ׳ילי, בצל, מלפפון.</p></article>
+        <article class="dish"><h3>עלים, אגס ותמר</h3><span class="price">46 ₪</span><p>גבינת עיזים.</p></article>
+        <p class="course">עיקר</p>
+        <article class="dish"><h3>דניס שלם על גחלים</h3><span class="price">128 ₪</span><p>חמאת זעתר.</p></article>
+        <article class="dish"><h3>פולנטה ופטריות</h3><span class="price">96 ₪</span><p>בלי בשר.</p></article>
+        <article class="dish"><h3>אנטריקוט קצר</h3><span class="price">162 ₪</span><p>חצילים חמים.</p></article>
+        <p class="course">סוף</p>
+        <article class="dish"><h3>בחושה טחינה וחלבה</h3><span class="price">46 ₪</span><p>חמה, מלח גס.</p></article>
+        <article class="dish"><h3>גלידת יוגורט עיזים</h3><span class="price">42 ₪</span><p>דבש ושמן זית.</p></article>
+      </div>
+    </section>
+    <section class="split" id="kitchen">
+      <img src="images/restaurant/chef.webp" width="800" height="1000" alt="השף במטבח" />
+      <div data-reveal>
+        <p class="eyebrow">המטבח</p>
+        <h2>אדם לוי מבשל את מה שנשאר מהשוק.</h2>
+        <p>אין מאה מנות. יש גחלים, יש שולחן, ויש כוס ראשונה שנמזגת לפני התפריט. אחרי שמונה וחצי הערב שייך למי שנשאר.</p>
+        <img src="images/restaurant/dish-1.webp" width="1000" height="688" alt="מנות בקערות" style="margin-top:1.2rem;aspect-ratio:3/2;object-fit:cover" />
+      </div>
+    </section>
+    <blockquote class="quote">«הדג היה מדויק, ואף אחד לא מיהר עלינו. בשישי בלי שם אין שולחן.»<footer>מיכל א., חיפה <span class="sample">המלצה לדוגמה</span></footer></blockquote>
+    <section class="visit" id="visit">
+      <div>
+        <p class="eyebrow">ביקור</p>
+        <h2>מוריה 18, הכרמל.</h2>
+        <p>המטבח אינו כשר. יש מנות בלי בשר, ואין תפריט ילדים נפרד. חניון ציבורי בהליכה קצרה.</p>
+        <p><a href="tel:+972500000018" dir="ltr">050-000-0018</a></p>
+      </div>
+      <div class="hours">
+        <div><span>א׳–ה׳</span><span dir="ltr">12:00–23:00</span></div>
+        <div><span>שישי</span><span dir="ltr">12:00–15:00</span></div>
+        <div><span>שבת</span><span dir="ltr">18:30–23:30</span></div>
+      </div>
+    </section>
+    <section class="book" id="book">
+      <div class="book-grid">
+        <div><p class="eyebrow">הזמנה</p><h2>שמרו את השולחן.</h2><p>בשישי בצהריים ובשבת בערב השם על הדלת שומר מקום.</p></div>
+        <div>
+          <form data-form data-success="reserve-success">
+            <div class="form-grid two">
+              <label class="field"><span>שם</span><input name="name" required minlength="2" autocomplete="name" /></label>
+              <label class="field"><span>טלפון</span><input name="phone" type="tel" dir="ltr" required autocomplete="tel" /></label>
+              <label class="field"><span>תאריך</span><input name="date" type="date" dir="ltr" required /></label>
+              <label class="field"><span>שעה</span><select name="time" required><option value="">בחרו</option><option>12:30</option><option>13:30</option><option>19:00</option><option>20:30</option><option>21:30</option></select></label>
+              <label class="field"><span>סועדים</span><select name="party" required><option value="">כמה</option><option>2</option><option>4</option><option>6</option><option>8</option></select></label>
+              <label class="field"><span>הערה</span><input name="note" placeholder="יום הולדת, בלי גלוטן" /></label>
+            </div>
+            <button class="solid" type="submit" style="margin-top:1rem;border:0">בקשת שולחן</button>
+          </form>
+          <div id="reserve-success" class="form-success" tabindex="-1" hidden role="status"><h3>הבקשה נרשמה לדוגמה.</h3><p>במסעדה אמיתית היינו מאשרים בטלפון. כאן שום דבר לא נשמר.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq" data-accordion>
+      <h2>לפני שמגיעים.</h2>
+      <div data-item><h3><button type="button" data-acc-btn aria-expanded="false" id="q1" aria-controls="a1">צריך להזמין? <span>+</span></button></h3><div id="a1" data-panel hidden><p>בימי חול בצהריים לפעמים יש מקום. בשישי ובשבת בערב ההזמנה היא השולחן.</p></div></div>
+      <div data-item><h3><button type="button" data-acc-btn aria-expanded="false" id="q2" aria-controls="a2">כשר? <span>+</span></button></h3><div id="a2" data-panel hidden><p>לא. מטבח ישראלי חופשי, עם מנות צמחוניות.</p></div></div>
+      <div data-item><h3><button type="button" data-acc-btn aria-expanded="false" id="q3" aria-controls="a3">אירוע קטן? <span>+</span></button></h3><div id="a3" data-panel hidden><p>עד שנים־עשר, באמצע שבוע, מהמטבח של אותו ערב. בלי תפריט אירועים נפרד.</p></div></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div><strong>כרמל 18</strong><p>מוריה 18, חיפה · <a href="tel:+972500000018" dir="ltr">050-000-0018</a></p></div>
+    <p class="built-by">נבנה כדוגמה על ידי <a href="index.html" dir="ltr" data-studio-name>NEXWEB</a>. העסק, השמות, המחירים וההמלצות בדיוניים.</p>
+  
+    <p><a href="accessibility.html">הצהרת נגישות</a></p>
+    <a class="wa" href="https://wa.me/972500000018?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%A9%D7%95%D7%9C%D7%97%D7%9F%20%D7%91%D7%9B%D7%A8%D7%9E%D7%9C%2018" target="_blank" rel="noopener noreferrer" aria-label="הזמנת שולחן בוואטסאפ"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.2 1.1-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.8-.3-1.4-.5-2.5-1.1-4.1-3.6-4.2-3.8-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.8-.3h.6c.2 0 .4 0 .5.4.2.6.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.5l-.3.4c-.1.1-.2.2-.1.5.2.3.7 1.1 1.5 1.8.9.8 1.7 1 1.9 1.1.2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.4.7 1.6.8.2.1.4.2.4.3.1.2.1.6-.1 1.2z"/></svg></a>
+  </footer>
+
+  <script src="js/a11y.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/motion.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
